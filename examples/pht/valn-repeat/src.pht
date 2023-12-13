@@ -1,0 +1,2 @@
+(app-fn
+	(valn-repeat 3 (println "Слава России!")))

@@ -1,0 +1,11 @@
+((defmacro test []
+	(valn-repeat 10
+		(println (symbol (rand-symbol)))))
+ (defmacro test-lazy []
+	(valn-repeat 10
+		(println (lazy-symbol (rand-symbol)))))
+ (app-fn
+	(println "Простой:\n")
+	(test)
+	(println "\nЛенивый:\n")
+	(test-lazy)))

@@ -1,0 +1,6 @@
+((cls Test [^Object]
+    (ctor [] (ccall))
+    (defn foo ^void []
+        (println "Foo!")))
+ (app-fn
+	(#foo (new ^Test))))

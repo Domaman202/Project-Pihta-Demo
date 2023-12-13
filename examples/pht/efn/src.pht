@@ -1,0 +1,5 @@
+(app
+	(efn ^String log ^void []
+		(println this))
+	(app-fn
+		(#log "Славься Мать Русь & Сестра Беларусь!")))

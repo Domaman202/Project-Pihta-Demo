@@ -1,0 +1,4 @@
+ (app-fn
+	(defmacro print-sum [a b]
+		(println (- (macro-arg a) (macro-arg b))))
+	(print-sum 3333 1111))
