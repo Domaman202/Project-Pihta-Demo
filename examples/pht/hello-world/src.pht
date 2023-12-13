@@ -1,0 +1,2 @@
+(app-fn
+	(println "Hello, Беларусь!")) 
