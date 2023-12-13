@@ -1,0 +1,17 @@
+(app-fn
+    (body
+        (def [[list (with-gens (new ^java.util.ArrayList) ^String)]])
+        (#add list "Hi!")
+        (println (typeof (#get list 0))))
+    (body
+        (def [[list (as-gens ^java.util.List (new ^java.util.ArrayList) ^String)]])
+        (#add list "Hi!")
+        (println (typeof (#get list 0))))
+    (body
+        (def [[list (new ^java.util.ArrayList<^String>)]])
+        (#add list "Hi!")
+        (println (typeof (#get list 0))))
+    (body
+        (def [[list (as ^java.util.List<^String> (new ^java.util.ArrayList))]])
+        (#add list "Hi!")
+        (println (typeof (#get list 0))))
